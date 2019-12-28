@@ -1,0 +1,171 @@
+
+ <html>
+ <head>
+ <title>Sign Up</title>
+ <link rel="StyleSheet" href="style.css"/>
+ </head>
+<body>
+    <div id="login-box">
+      <div class="left-box">
+              <h1> Sign Up</h1>
+              <input type="text" name="Username" placeholder ="User Name"/>
+              <input type="text" name="e-mail" placeholder ="email"/>
+              <input type="password" name="Password" placeholder ="Password"/>
+              <input type="Password" name="password2" placeholder ="Retype Password"/>
+              <input type="submit" name="signUp-button" value ="SIGN UP"/>
+      </div>
+      <div class="right-box">
+          <span class="Signinwith"> Sign in With<br>Social Networks </span>
+          <button class="social  Google">Log in with Google+</button>
+          <button class="social twitter">Log in with Twitter</button>
+          <button class="social facebook">Log in with Facebook </button>
+       </div>
+       <div class="or">OR</div>
+    </div>
+
+
+
+</body>
+</html>
+
+CSS CODE
+
+body{
+ 	 
+ margin:0;
+ padding:0;
+ background:#efefef;
+ font-size:16px;
+ color:#777;
+ font-family:sans-serif;
+ font-weight:300;
+}
+#login-box{
+	position: relative;
+	margin:5% auto;
+	width:600px;
+	height:400px;
+	background:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.left-box
+{
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+	padding:40px;
+	width:300px;
+	height:400px;
+}
+h1
+{
+	margin:0 0 20px 0;
+	font-weight:300;
+	font-size:28px;
+}
+input[ type="text"],
+input[ type="password"]
+{
+	display:block;
+	box-sizing:border-box;
+	margin-bottom:20px;
+	padding: 4px;
+	width: 220px;
+	height:32px;
+	border: none;
+	outline:none;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size:15px;
+	transition:0.2s ease;
+}
+input[type="submit"]
+{
+	margin-bottom:28px;
+	width:120px;
+	height:32px;
+	background:#eb3477;
+	border:none;
+	border-radius:5px;
+	color:#fff;
+	font-family: sans-serif;
+	font-weight:500;
+	text-transform:uppercase;
+	text-transition:0.2s ease;
+	cursor:pointer;
+}
+input[type="submit"]:hover,
+input[type="submit"]focus
+{
+	background:#918e8e;
+	transition: 0.2s ease;
+}
+.right-box
+{
+	position:absolute;
+	top:0;
+	right:0;
+	box-sizing:border-box;
+	padding:40px;
+	width:300px;
+	height:400px;
+	background-image: url(images.jpg);
+	background-size:cover;
+	background-position:center;
+}
+.or
+{
+	position:absolute;
+	top:180px;
+	left:280px;
+	width:40px;
+	height:40px;
+	background:#efefef;
+	border-radius:50%;
+	box-shadow:0 2px 4px rgba(0,0,0,0.6);
+	line-height:40px;
+	text-align:center;
+}
+
+.right-box .signinwith
+{
+	display:block;
+	margin-bottom:40px;
+	font-size:28px;
+	color:#fff;
+	text-align:center;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+button.social
+{
+	margin-bottom:20px;
+	width:220px;
+	height:36px;
+	border:none;
+	border-radius:2px;
+	color:#fff;
+	font-family: cursive;
+	font-weight:500;
+	trasition: 0.2s ease;
+	cursor:pointer;
+}
+.facebook
+{
+	background:#2d45c2;
+}
+
+.twitter
+{
+	background:#55acee;
+}
+.Google
+{
+	background:#dd4b39;
+}
+
+
+
+
+
